@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "red red orange"
+        "red red orange"
+        "green skyblue skyblue"
+        "green skyblue2 skyblue2";
+    grid-gap: 5px;
+    width: 500px;
+    margin: auto;
+}
+.top-wrapper{
+    /* margin: auto;
+    margin-top: 20px; */
+    font-size: 15px;
+    width: fit-content;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    margin-top: -43%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.219), rgba(243, 220, 220, 0.61));
+    border-radius: 2.5px;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;color: #fff;
+}
+
+main div {
+    padding: 2rem;
+    border-radius: 2.5px;
+}
+
+.red {
+
+    background-color: red;
+    grid-area: red;
+}
+
+.orange {
+    background-color: orange;
+    grid-area: orange;
+}
+
+.green {
+    background-color: green;
+    grid-area: green;
+}
+
+.skyblue {
+    background-color: skyblue;
+    grid-area: skyblue;
+}
+
+.skyblue2 {
+    background-color: skyblue;
+    grid-area: skyblue2;
+}
